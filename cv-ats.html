@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>السيرة الذاتية (ATS) — خالد عبدالله الريحاني</title>
+<meta name="description" content="نسخة السيرة الذاتية المتوافقة مع أنظمة التوظيف الإلكترونية (ATS) — خالد عبدالله الريحاني.">
+<meta name="theme-color" content="#0b0f16">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b0f16'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='%232f81f7' font-family='monospace'>&gt;_</text></svg>">
+<style>
+/* ===========================================================================
+   نسخة ATS — قواعد التصميم مقصودة وليست نقصًا في التنسيق:
+   • عمود واحد فقط، بلا أعمدة جانبية — أنظمة ATS تقرأ من أعلى لأسفل.
+   • لا جداول (table) لبنية الصفحة — بعض المحلّلات تُشوّه الجداول.
+   • لا أيقونات ولا صور تحمل معلومة — كل النص قابل للتحديد والقراءة.
+   • عناوين أقسام قياسية (ملخص / خبرة / تعليم / مهارات / شهادات).
+   • كلمات مفتاحية بالعربية والإنجليزية معًا لرفع فرص المطابقة.
+   =========================================================================== */
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:#5b6068;padding:26px 14px;
+  color:#000;
+  font-family:"Times New Roman",Times,"Traditional Arabic",Georgia,Arial,sans-serif;
+  font-size:11pt;line-height:1.55;
+  -webkit-text-size-adjust:100%;
+  touch-action:manipulation;
+}
+/* الخطوط اللاتينية داخل النص العربي */
+[dir="ltr"],.en{font-family:Arial,Helvetica,sans-serif}
+
+/* ---------- شريط الأدوات (لا يُطبَع) ---------- */
+.toolbar{
+  max-width:820px;margin:0 auto 16px;display:flex;flex-wrap:wrap;gap:9px;
+  align-items:center;justify-content:center;
+  background:#1b212b;border:1px solid #333d4d;border-radius:12px;padding:13px 16px;
+  font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+}
+.toolbar p{flex:1 1 100%;color:#9dabbb;font-size:12.5px;text-align:center;line-height:1.7;margin-bottom:2px}
+.tbtn{
+  display:inline-flex;align-items:center;gap:7px;min-height:44px;
+  background:#2f81f7;color:#fff;border:0;border-radius:9px;
+  padding:10px 18px;font-family:inherit;font-size:13.5px;font-weight:500;
+  cursor:pointer;text-decoration:none;transition:.16s;
+}
+.tbtn:hover{background:#1f63d8}
+.tbtn.ghost{background:transparent;color:#c9d4e2;border:1px solid #414e63}
+.tbtn.ghost:hover{background:#252d3a;color:#fff}
+
+/* ---------- الورقة ---------- */
+.sheet{
+  width:210mm;width:min(210mm,100%);
+  margin:0 auto;background:#fff;padding:16mm 18mm;
+  box-shadow:0 12px 44px #0006;
+}
+
+/* ---------- الرأس ---------- */
+.cv-name{font-size:20pt;font-weight:700;line-height:1.3}
+.cv-name-en{font-size:13pt;font-weight:400;color:#222;margin-top:2px}
+.cv-role{font-size:12pt;font-weight:700;margin-top:8px;color:#000}
+.cv-role-en{font-size:10.5pt;color:#333}
+.cv-contact{margin-top:10px;font-size:10.5pt;line-height:1.9}
+.cv-contact span{white-space:nowrap}
+.cv-contact i{font-style:normal;color:#555}
+.rule{border:0;border-top:1.5px solid #000;margin:12px 0 0}
+
+/* ---------- الأقسام ---------- */
+.sec{margin-top:15px}
+h2{
+  font-size:12.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.2px;
+  border-bottom:1px solid #000;padding-bottom:3px;margin-bottom:8px;
+}
+h2 small{font-weight:400;font-size:9.5pt;letter-spacing:0;text-transform:none;color:#333}
+
+.item{margin-bottom:10px}
+.item:last-child{margin-bottom:0}
+.item-top{font-size:11pt;font-weight:700}
+.item-top .org{font-weight:400;color:#222}
+.item-when{font-size:10pt;color:#333}
+.role{margin-top:7px}
+.role b{font-size:10.5pt}
+.role .org{font-weight:400;color:#222}
+
+ul{list-style:none;margin-top:3px}
+li{position:relative;padding-inline-start:14px;font-size:10.5pt;line-height:1.65}
+li::before{content:"-";position:absolute;inset-inline-start:0;color:#000}
+
+/* قوائم الكلمات المفتاحية للمهارات */
+.kw{margin-top:2px;font-size:10.5pt;line-height:1.75}
+.kw b{font-weight:700}
+.kw .en{direction:ltr;display:inline-block;text-align:left}
+
+.foot{margin-top:16px;padding-top:8px;border-top:1px solid #000;font-size:9pt;color:#444;text-align:center}
+
+/* ═════════════════════ الجوال ═════════════════════ */
+@media (max-width:820px){
+  body{background:#0b0f16;padding:0;font-size:12pt}
+  .toolbar{margin:0;border-radius:0;border-inline:0;border-top:0;max-width:none}
+  .sheet{width:100%;padding:20px 16px 30px;box-shadow:none}
+  .cv-contact span{white-space:normal}
+  .kw .en{display:inline}
+}
+
+/* ═════════════════════ الطباعة / PDF ═════════════════════ */
+@page{size:A4;margin:12mm}
+@media print{
+  body{background:#fff;padding:0;font-size:10.5pt}
+  .toolbar{display:none!important}
+  .sheet{width:auto;margin:0;padding:0;box-shadow:none}
+  .sec{margin-top:11px}
+  .item,h2{break-inside:avoid}
+  h2{break-after:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ شريط الأدوات ══════════════════ -->
+<div class="toolbar">
+  <p>
+    <b>نسخة ATS</b> — عمود واحد، بلا جداول ولا أيقونات، وكل النص قابل للتحديد.
+    اطبعها إلى PDF، أو نزّلها Word وعدّلها قبل الإرسال.
+  </p>
+  <button class="tbtn" id="printBtn">طباعة / حفظ PDF</button>
+  <button class="tbtn" id="wordBtn">تنزيل نسخة Word (.doc)</button>
+  <a class="tbtn ghost" href="cv.html">النسخة المنسّقة</a>
+</div>
+
+<!-- ══════════════════ السيرة ══════════════════ -->
+<div class="sheet" id="doc">
+
+  <!-- ─── الرأس: معلومات التواصل كنص عادي ─── -->
+  <header>
+    <div class="cv-name">خالد عبدالله الريحاني</div>
+    <div class="cv-name-en en" dir="ltr">Khaled Abdullah Alraihani</div>
+    <div class="cv-role">أخصائي شبكات وذكاء اصطناعي</div>
+    <div class="cv-role-en en" dir="ltr">Network Technology &amp; AI Specialist</div>
+    <div class="cv-contact">
+      <span><i>الجوال:</i> <span class="en" dir="ltr">0550723312</span></span> &nbsp;|&nbsp;
+      <span><i>البريد:</i> <span class="en" dir="ltr">khaled585x@gmail.com</span></span> &nbsp;|&nbsp;
+      <span><i>الموقع:</i> الطائف، المملكة العربية السعودية</span>
+    </div>
+  </header>
+  <hr class="rule">
+
+  <!-- ─── الملخص ─── -->
+  <section class="sec">
+    <h2>الملخص المهني <small>| Professional Summary</small></h2>
+    <p style="font-size:10.5pt;line-height:1.75">
+      متخصص في تقنية الشبكات وحاصل على دبلوم تقنية الشبكات من الكلية التقنية بالطائف بمعدل 4.71 من 5.
+      أمتلك أساسًا قويًا في تحليل البيانات وبناء النماذج باستخدام Python، واهتمامًا عمليًا بالذكاء الاصطناعي
+      وتعلم الآلة ومعالجة اللغة العربية والأمن السيبراني. أنفّذ مشاريع تطبيقية كاملة من تحليل البيانات حتى
+      بناء النموذج وتقييمه، مع خبرة في قيادة الفرق والعمل التطوعي تتجاوز 2010 ساعة عبر 15 جهة.
+    </p>
+  </section>
+
+  <!-- ─── المهارات ─── -->
+  <section class="sec">
+    <h2>المهارات <small>| Skills</small></h2>
+
+    <div class="kw">
+      <b>الشبكات — Networking:</b>
+      <span class="en" dir="ltr">Networking Fundamentals, Network Infrastructure, Network Troubleshooting, Network Protocols, Switch Configuration, Network Design</span>
+    </div>
+    <div class="kw">
+      <b>الذكاء الاصطناعي — Artificial Intelligence:</b>
+      <span class="en" dir="ltr">Machine Learning, Deep Learning, Generative AI, Large Language Models (LLMs), RAG, AI Agents, Cloud AI Integration, NLP</span>
+    </div>
+    <div class="kw">
+      <b>بايثون وتحليل البيانات — Python &amp; Data:</b>
+      <span class="en" dir="ltr">Python, NumPy, Pandas, Matplotlib, Scikit-learn, OpenCV, Data Analysis, Data Visualization, Linear Regression, Logistic Regression, MLPRegressor, TF-IDF</span>
+    </div>
+    <div class="kw">
+      <b>الأمن السيبراني — Cybersecurity:</b>
+      <span class="en" dir="ltr">Threat Analysis, Cyber Threat Intelligence, MITRE ATT&amp;CK, Penetration Testing, Red Team / Blue Team, Kali Linux, Wireshark, CTF</span>
+    </div>
+    <div class="kw">
+      <b>الأدوات — Tools:</b>
+      <span class="en" dir="ltr">Git, GitHub, VS Code, Google Colab, Linux, Microsoft Office, Microsoft Office Specialist (MOS)</span>
+    </div>
+  </section>
+
+  <!-- ─── المشاريع ─── -->
+  <section class="sec">
+    <h2>المشاريع التقنية <small>| Projects</small></h2>
+
+    <div class="item">
+      <div class="item-top en" dir="ltr">AI Business Analyzer</div>
+      <div class="item-when">محلّل الأعمال بالذكاء الاصطناعي — Python</div>
+      <ul>
+        <li>تحليل بيانات المبيعات الشهرية إحصائيًا ووصفيًا باستخدام NumPy وPandas.</li>
+        <li>بناء نموذج تنبؤ بـ Linear Regression مع قياس MAE ومعامل R².</li>
+        <li>بناء شبكة عصبية MLPRegressor ومقارنة نتائجها بالنموذج الخطي.</li>
+        <li>نظام RAG للاسترجاع من قاعدة معرفة والإجابة على الأسئلة.</li>
+        <li>معالجة صور بـ OpenCV، و7 رسومات بيانية بـ Matplotlib.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-top en" dir="ltr">AI Sentiment Analyzer</div>
+      <div class="item-when">تحليل مشاعر التعليقات العربية — Python, NLP</div>
+      <ul>
+        <li>تصنيف التعليقات العربية إلى إيجابي وسلبي ومحايد (3 فئات).</li>
+        <li>تحويل النصوص إلى متجهات رقمية بـ TF-IDF مع n-grams (1,2).</li>
+        <li>تدريب نموذج Logistic Regression وتقييمه بالدقة وتقرير تصنيف وConfusion Matrix.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-top en" dir="ltr">Sales Analysis 2026</div>
+      <div class="item-when">تحليل مبيعات سنوي متعدد المنتجات — Python</div>
+      <ul>
+        <li>تحليل مبيعات 10 منتجات على مدار 12 شهرًا وترتيبها تنازليًا.</li>
+        <li>تحديد الأفضل والأقل مبيعًا وأفضل وأضعف شهر، واستخراج أفضل 5 منتجات.</li>
+        <li>4 رسومات: أعمدة، خطي، دائري، وهيستوغرام.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-top en" dir="ltr">Python Fundamentals Toolkit</div>
+      <div class="item-when">ثلاثة أنظمة تطبيقية — Python</div>
+      <ul>
+        <li>Student Management System: سجلات الطلاب والدرجات وحساب المتوسط والتحقق من المدخلات.</li>
+        <li>Phone Book: إضافة جهات الاتصال وعرضها والبحث بالاسم.</li>
+        <li>Birthday Calculator: التحقق من التاريخ وحساب العمر ويوم الميلاد والترتيب.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── الخبرات ─── -->
+  <section class="sec">
+    <h2>الخبرات العملية <small>| Work Experience</small></h2>
+
+    <div class="item">
+      <div class="item-top">موظف استقبال <span class="org">— فندق إيلاف للشقق المفروشة</span></div>
+      <div class="item-when">مايو 2018 – أكتوبر 2019</div>
+      <ul>
+        <li>استقبال وخدمة العملاء والتواصل المباشر معهم.</li>
+        <li>التعامل مع احتياجات المستفيدين وتنظيم العمليات اليومية.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-top">كاشير <span class="org">— بقالة المتعاني</span></div>
+      <div class="item-when">أبريل 2016 – أبريل 2018</div>
+      <ul>
+        <li>التعامل مع العملاء وإدارة عمليات البيع والدفع.</li>
+        <li>تنظيم العمليات اليومية والمحافظة على دقة العمليات المالية.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-top">حارس أمن <span class="org">— شركة نهضة العواصم للمقاولات المحدودة</span></div>
+      <div class="item-when">يونيو 2012 – نوفمبر 2012</div>
+      <ul>
+        <li>تنفيذ مهام الأمن والحماية والالتزام بالإجراءات والتعليمات.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─── التعليم ─── -->
+  <section class="sec">
+    <h2>التعليم <small>| Education</small></h2>
+    <div class="item">
+      <div class="item-top">دبلوم تقنية الشبكات <span class="org">— الكلية التقنية بالطائف</span></div>
+      <div class="item-when">سنة التخرج 1444 هـ</div>
+      <ul>
+        <li>التخصص: تقنية شبكات الحاسب — شهادة جامعية متوسطة / دبلوم.</li>
+        <li>المعدل التراكمي: 4.71 من 5.</li>
+      </ul>
+      <div class="kw" style="margin-top:4px">
+        <b>المقررات والتطبيقات:</b>
+        أساسيات الشبكات، تصميم البنية التحتية للشبكات، إعداد السويتشات، استكشاف أخطاء الشبكات
+        وإصلاحها، أنظمة التشغيل، صيانة أجهزة الحاسب، تقنيات الاتصال، إدارة الأنظمة.
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── الشهادات ─── -->
+  <section class="sec">
+    <h2>الشهادات والدورات <small>| Certifications</small></h2>
+
+    <div class="kw"><b>الذكاء الاصطناعي:</b>
+      تطبيقات تعلم الآلة في التجارة الإلكترونية (جامعة الملك سعود – مبادرة Beyond AI) ·
+      Building an AI Agent on Cloud (جمعية الحوسبة السحابية CCA) ·
+      مهارات الذكاء الاصطناعي في بيئة العمل (معتمد TVTC، 15 ساعة) ·
+      مهارات الذكاء الاصطناعي (معهد سما المعالي، معتمد TVTC، 20 ساعة) ·
+      صناع الذكاء الاصطناعي – IBM SkillsBuild
+    </div>
+
+    <div class="kw"><b>الأمن السيبراني:</b>
+      eJPT Prep Course (نادي الأمن السيبراني – جامعة الملك فيصل ونادي طويق، 16 ساعة) ·
+      CyberKickStart Bootcamp (جامعة الإمام عبدالرحمن بن فيصل) ·
+      CyberGuard CTF Bootcamp (Kali Linux, Wireshark, CTF) ·
+      تطوير مهارات الهجوم والدفاع – Red/Blue Teaming (CYBER SHE)
+    </div>
+
+    <div class="kw"><b>الشبكات والحوسبة السحابية:</b>
+      التدريب التقني – دبلوم تقنية الشبكات (الكلية التقنية بالطائف) ·
+      CompTIA Cloud+ (وزارة الاتصالات وتقنية المعلومات – مهارات المستقبل، 20 ساعة)
+    </div>
+
+    <div class="kw"><b>الإدارة والقيادة:</b>
+      Training of Microsoft Office Specialist (MOS) (معتمد TVTC، 60 ساعة) ·
+      التخطيط الاستراتيجي الشخصي (معتمد TVTC، 15 ساعة) ·
+      مهارات بناء المعارف والسلوكيات والجدارات لمدراء التطوع (معتمد TVTC، 25 ساعة) ·
+      إدارة المشاريع – Project Management (معتمد TVTC، 10 ساعات) ·
+      التميز الإداري (معتمد TVTC، 15 ساعة) ·
+      التميز في خدمة العملاء (12 ساعة) ·
+      هكذا يكون القادة (غرفة الطائف)
+    </div>
+
+    <div class="kw"><b>التطوع وخدمة العملاء:</b>
+      العلاقات العامة — الرسالة والأداء الاحترافي (غرفة الطائف) ·
+      تحسين تجربة المستفيد في المجتمع التطوعي (معتمد TVTC، 10 ساعات) ·
+      مهارات موظف خدمة العملاء (معتمد TVTC، 20 ساعة) ·
+      مهارات استخدام LinkedIn وبناء الملف الشخصي (معتمد TVTC، 15 ساعة) ·
+      إعداد السيرة الذاتية بنظام ATS (معتمد TVTC، 6 ساعات) ·
+      إعداد التقارير باستخدام التقنيات الذكية (2024) ·
+      مفهوم التطوع بين الأفراد والمؤسسات — العطاء الرقمي (2023) ·
+      بيدي روح المجتمع — الإسعافات الأولية والإنعاش القلبي الرئوي
+    </div>
+  </section>
+
+  <!-- ─── التدريب ─── -->
+  <section class="sec">
+    <h2>التدريب العملي <small>| Training</small></h2>
+    <div class="item">
+      <div class="item-top">تدريب تقني <span class="org">— الكلية التقنية بالطائف</span></div>
+      <div class="kw">صيانة أجهزة الحاسب · عمل الفورمات · تنصيب أنظمة التشغيل · فحص أجهزة الشبكات · إعداد السويتشات · استكشاف الأخطاء وإصلاحها</div>
+    </div>
+    <div class="item" style="margin-bottom:0">
+      <div class="item-top">تدريب مهني <span class="org">— فندق اريديوم</span></div>
+      <div class="kw">إدارة المشاريع · كتابة التقارير · الذكاء العاطفي · تطبيقات الذكاء الاصطناعي</div>
+    </div>
+  </section>
+
+  <!-- ─── التطوع ─── -->
+  <section class="sec">
+    <h2>العمل التطوعي والقيادة <small>| Volunteering &amp; Leadership</small></h2>
+    <div class="item">
+      <div class="item-top">نائب قائد الفريق <span class="org">— فريق النجوم التطوعي</span></div>
+      <ul>
+        <li>إدارة وتنفيذ المشاريع والمبادرات التطوعية والمجتمعية.</li>
+        <li>الإشراف على فرق العمل والمساهمة في تحقيق أهداف المبادرات.</li>
+        <li>أكثر من 2010 ساعة تطوعية عبر 15 جهة تطوعية مختلفة.</li>
+      </ul>
+      <div class="kw" style="margin-top:4px">
+        <b>المهارات:</b> قيادة الفرق · تنظيم الفعاليات · التخطيط للمبادرات · إدارة المهام ·
+        التواصل مع الجهات · العمل الجماعي · حل المشكلات · إدارة الوقت
+      </div>
+    </div>
+    <div class="item" style="margin-bottom:0">
+      <div class="item-top">توثيق بصري <span class="org">— مشروع «الطائف بعيونهم»</span></div>
+      <div class="kw">تغطية الفعاليات · توثيق المبادرات · المعالم والمواقع</div>
+    </div>
+  </section>
+
+  <!-- ─── اللغات ─── -->
+  <section class="sec">
+    <h2>اللغات <small>| Languages</small></h2>
+    <div class="kw"><b>العربية:</b> اللغة الأم &nbsp;·&nbsp; <b>الإنجليزية:</b> مستوى عملي محدود</div>
+  </section>
+
+  <div class="foot">
+    أتعلم اليوم لأبني حلول الغد. — <span class="en" dir="ltr">From Networking to AI</span>
+  </div>
+
+</div>
+
+<script>
+/* =======================================================================
+   تنزيل نسخة Word (.doc)
+   نبني ملف HTML متوافقًا مع Word من نفس محتوى الصفحة — بلا مكتبات خارجية.
+   Word يفتحه ويحفظه كـ .docx، وأنظمة ATS تقرأ نصّه بسهولة.
+   ======================================================================= */
+(function () {
+  var WORD_CSS = [
+    '@page{size:A4;margin:2cm}',
+    'body{font-family:"Times New Roman",Times,"Traditional Arabic",serif;font-size:11pt;line-height:1.55;direction:rtl}',
+    'h2{font-size:12.5pt;border-bottom:1px solid #000;padding-bottom:3px;margin:14px 0 6px;text-transform:uppercase}',
+    'h2 small{font-weight:400;font-size:9.5pt;text-transform:none;color:#333}',
+    '.cv-name{font-size:20pt;font-weight:700}',
+    '.cv-name-en{font-size:13pt;color:#222}',
+    '.cv-role{font-size:12pt;font-weight:700;margin-top:8px}',
+    '.cv-role-en{font-size:10.5pt;color:#333}',
+    '.cv-contact{margin-top:8px;font-size:10.5pt}',
+    '.cv-contact i{font-style:normal;color:#555}',
+    '.rule{border:0;border-top:1.5px solid #000;margin:10px 0 0}',
+    '.item{margin-bottom:9px}',
+    '.item-top{font-size:11pt;font-weight:700}',
+    '.item-top .org{font-weight:400;color:#222}',
+    '.item-when{font-size:10pt;color:#333}',
+    'ul{margin:3px 0 0 0;padding:0;list-style:none}',
+    'li{font-size:10.5pt;line-height:1.6}',
+    '.kw{margin:2px 0;font-size:10.5pt;line-height:1.7}',
+    '[dir="ltr"],.en{font-family:Arial,Helvetica,sans-serif;direction:ltr;unicode-bidi:embed}',
+    '.foot{margin-top:14px;padding-top:8px;border-top:1px solid #000;font-size:9pt;color:#444;text-align:center}'
+  ].join('');
+
+  function buildWordHtml() {
+    var body = document.getElementById('doc').innerHTML;
+    return '<html xmlns:o="urn:schemas-microsoft-com:office:office" ' +
+           'xmlns:w="urn:schemas-microsoft-com:office:word" ' +
+           'xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">' +
+           '<title>السيرة الذاتية — خالد عبدالله الريحاني</title>' +
+           '<style>' + WORD_CSS + '</style></head>' +
+           '<body dir="rtl" style="direction:rtl">' + body + '</body></html>';
+  }
+
+  document.getElementById('printBtn').addEventListener('click', function () {
+    window.print();
+  });
+
+  document.getElementById('wordBtn').addEventListener('click', function () {
+    // '\ufeff' = BOM حتى يكتشف Word الترميز UTF-8 ويقرأ العربية بشكل صحيح
+    var blob = new Blob(['\ufeff', buildWordHtml()], { type: 'application/msword' });
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    a.href = url;
+    a.download = 'Khalid-Alraihani-CV-ATS.doc';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1500);
+  });
+})();
+</script>
+
+</body>
+</html>
